@@ -94,15 +94,15 @@
                 <p>
                     <label for="zonal">Zonal</label><br>
                     <select class="form-control" name="zonal" id="zonal">
-                        <option value="1">Zona Registral N° XVII Sede Tacna</option>
-                        <option value="2">Zona Registral N° XVII Sede Juliaca</option>
+                        <option value="Zona Registral N° XVII Sede Tacna">Zona Registral N° XVII Sede Tacna</option>
+                        <option value="Zona Registral N° XVII Sede Juliaca">Zona Registral N° XVII Sede Juliaca</option>
                     </select>
                 </p>
                 <p>
                     <label for="oficina">Oficina</label><br>
                     <select class="form-control" name="oficina" id="oficina">
-                        <option value="1">Oficina Registral de Juliaca</option>
-                        <option value="2">Oficina Registral de Puno</option>
+                        <option value="Oficina Registral de Juliaca">Oficina Registral de Juliaca</option>
+                        <option value="Oficina Registral de Puno">Oficina Registral de Puno</option>
                     </select>
                 </p>
 

@@ -217,7 +217,7 @@
             for ($a=1; $a <= QRSPEC_VERSION_MAX; $a++) {
                 $frame = QRspec::newFrame($a);
                 if (QR_IMAGE) {
-                    $fileName = QR_CACHE_DIR.'frame_'.$a.'.png';
+                    $fileName = QR_CACHE_DIR.'frame_'.$a.'.jpg';
                     QRimage::png(self::binarize($frame), $fileName, 1, 0);
                 }
 				

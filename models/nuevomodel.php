@@ -26,7 +26,7 @@ class NuevoModel extends Model
         $qr = new CodeQR();
         $imagen =  $qr->GenerateCodeQr($datos['dniacreditado']);
         $new_imagen = "models/phpqrcode/".$imagen;
-        echo $new_imagen;
+        //echo $new_imagen;
         
         try{
             $query = $this->db->connect()->prepare('INSERT INTO acreditar (nomAcred,dniAcred,direccion,anio,idzonal,idpersonal,tipoesc,numesc,fecesc,otorgesc,favoresc,notario,protocolo,folio,departamento,provincia,distrito,oficina,fecCreate,codeqr) VALUES (:nomAcred,:dniAcred,:direccion,:anio,:idzonal,:idpersonal,:tipoesc,:numesc,:fecesc,:otorgesc,:favoresc,:notario,:protocolo,:folio,:departamento,:provincia,:distrito,:oficina,now(),:codeqr)');
@@ -54,7 +54,7 @@ class NuevoModel extends Model
                 
             return true;
         }catch(PDOException $e){    
-            echo $e->getMessage();
+            //echo $e->getMessage();
             return false;
         }
         

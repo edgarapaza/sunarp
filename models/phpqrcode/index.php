@@ -13,7 +13,7 @@ class CodeQR
         $level = 'H';
     
         //set it to writable location, a place for temp generated PNG files
-        $PNG_TEMP_DIR = dirname(__FILE__).DIRECTORY_SEPARATOR.'temp'.DIRECTORY_SEPARATOR;
+        $PNG_TEMP_DIR = .DIRECTORY_SEPARATOR.'temp'.DIRECTORY_SEPARATOR;
         
         //html PNG location prefix
         $PNG_WEB_DIR = 'temp/';

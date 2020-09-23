@@ -16,25 +16,25 @@ class Nuevo extends Controller
     function registrarNuevaAcreditacion()
     {       
         //Datos Acreditacion
-        $nomacreditado  = $_POST['nomacreditado'];
-		$dniacreditado  = $_POST['dniacreditado'];
-		$direccion      = $_POST['direccion'];
-        $anio           = $_POST['anio'];
+        $nomacreditado  = trim(strtoupper($_POST['nomacreditado']));
+		$dniacreditado  = trim(strtoupper($_POST['dniacreditado']));
+		$direccion      = trim(strtoupper($_POST['direccion']));
+        $anio           = trim(strtoupper($_POST['anio']));
         //Datos de la Escritura
-		$tipoescritura  = $_POST['tipoescritura'];
-		$numescritura   = $_POST['numescritura'];
-		$fechaescritura = $_POST['fechaescritura'];
-		$otorgante      = $_POST['otorgante'];
-		$favorecido     = $_POST['favorecido'];
-		$notario        = $_POST['notario'];
-		$protocolo      = $_POST['protocolo'];
-        $folio          = $_POST['folio'];
-		$departamento   = $_POST['departamento'];
-		$provincia      = $_POST['provincia'];
-		$distrito       = $_POST['distrito'];
-		$zonal          = $_POST['zonal'];
-        $oficina        = $_POST['oficina'];
-        $idpersonal     = 1000; //$_POST['idpersonal'];
+		$tipoescritura  = trim(strtoupper($_POST['tipoescritura']));
+		$numescritura   = trim(strtoupper($_POST['numescritura']));
+		$fechaescritura = trim(strtoupper($_POST['fechaescritura']));
+		$otorgante      = trim(strtoupper($_POST['otorgante']));
+		$favorecido     = trim(strtoupper($_POST['favorecido']));
+		$notario        = trim(strtoupper($_POST['notario']));
+		$protocolo      = trim(strtoupper($_POST['protocolo']));
+        $folio          = trim(strtoupper($_POST['folio']));
+		$departamento   = trim(strtoupper($_POST['departamento']));
+		$provincia      = trim(strtoupper($_POST['provincia']));
+		$distrito       = trim(strtoupper($_POST['distrito']));
+		$zonal          = trim(strtoupper($_POST['zonal']));
+        $oficina        = trim(strtoupper($_POST['oficina']));
+        $idpersonal     = 1000; //trim(strtoupper($_POST['idpersonal']));
         
 
         $mensaje = "";

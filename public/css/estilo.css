@@ -1,0 +1,32 @@
+:root{
+	--azul: #004D66;
+	--azulblack: #1F5466;
+	--celeste1: #46C1EA;
+	--celeste2: #00ACE6;
+	--celeste3: #0086B3;
+}
+
+body{
+	font-family: 'Playfair Display', serif;
+}
+
+footer{
+	background-color: var(--azul);
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	color: white;
+}
+
+.hero-image{
+	margin: 20px 0px 20px 0px;
+	border: 1px solid var(--azul);
+	width: 100%;
+}
+.hero-titulo{
+	color: var(--celeste3);
+	text-align: center;
+}
+.navbar-arp{
+	background-color: var(--celeste2);
+}
